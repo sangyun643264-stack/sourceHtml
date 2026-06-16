@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>포지션 연습</title>
+    <style media="screen">
+      .total{
+        width: 400px;
+        display: flex;
+      }
+      .box{
+        width: 200px;
+        height: 100px;
+        /* 왼쪽으로 배치 */
+        float: left;
+        position: relative;
+      }
+      #box1{
+        background-color: skyblue;
+        color: white;
+      }
+      #box2{
+        background-color: hotpink;
+        color: white;
+      }
+      #box3{
+        background-color: yellow;
+      }
+      #box4{
+        background-color: black;
+        color: white;
+      }
+      .box>b{
+        position: absolute;
+        /* position: relative;
+        top: 39.5px;
+        left: 71.1px; */
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%)translateY(-50%);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="total">
+      <div class="box" id="box1">
+        <b>skyblue</b>
+      </div>
+      <div class="box" id="box2">
+        <b>hotpink</b>
+      </div>
+      <div class="box" id="box3">
+        <b>yellow</b>
+      </div>
+      <div class="box" id="box4">
+        <b>black</b>
+      </div>
+    </div>
+  </body>
+</html>
